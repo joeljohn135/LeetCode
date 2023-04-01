@@ -1,31 +1,11 @@
 class Solution:
-	def isValid(self, s) :
-		stack = []
-		for brac in s:
-
-			if brac == '(':
-				stack.append(brac)
-			elif brac == '{':
-				stack.append(brac)
-			elif brac == '[':
-				stack.append(brac)
-                
-			else:
-				if not stack:
-					return False
-				top = stack.pop()
-				if top=='(' and brac == ')':
-					continue
-				elif top=='{' and brac == '}':
-					continue
-				elif top=='[' and brac == ']':
-					continue
-				else:
-					return False
-
-		if len(stack)>0:
-			return False
-		else:
-			return True
-    
-         
+    def isValid(self, s: str) -> bool:
+        stack = []
+        mapping = {')': '(', '}': '{', ']': '['}
+        for brac in s:
+            if brac in mapping:
+                if not stack or stack.pop() != mapping[brac]:
+                    return False
+            else:
+                stack.append(brac)
+        return not stack
