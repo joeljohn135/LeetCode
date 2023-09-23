@@ -1,2 +1,2 @@
 # LeetCode
-Solutions to Leetcode
+Solutions to Leetcode algorithms
