@@ -1,4 +1,4 @@
 # LeetCode
-Solutions 
--Algorithms using python
+Solutions <br/>
+-Algorithms using python <br/>
 -SQL
