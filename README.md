@@ -1,2 +1,4 @@
 # LeetCode
-Solutions to Leetcode algorithms using python
+Solutions 
+-Algorithms using python
+-SQL
